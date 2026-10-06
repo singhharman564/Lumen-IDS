@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.jupyter-runtime/
+
+# Data and captures (never commit these)
+data/*
+!data/.gitkeep
+!data/README.md
+*.pcap
+*.pcapng
+*.csv
+*.parquet
+
+# Models (large binary files)
+*.joblib
+*.pkl
+*.onnx
+
+# OS and editor
+.DS_Store
+.vscode/
+.idea/
