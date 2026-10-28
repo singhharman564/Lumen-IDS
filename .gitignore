@@ -24,3 +24,7 @@ data/*
 .DS_Store
 .vscode/
 .idea/
+
+# Captured network logs
+data/captures/
+*.log
