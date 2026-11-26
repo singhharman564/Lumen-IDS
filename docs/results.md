@@ -252,3 +252,13 @@ Known gaps: brute force and web attacks.
 
 
 
+\## Clean re-run of notebook 07 (restart and run all)
+
+Bundle-level false alarm rate 0.82% (273 of 33,228 benign bundles).
+
+Attack detection 91.83% (7,679 of 8,362 attack bundles).
+
+Recall: portscan 98.8%, dos 90.1%, bruteforce 58.8%, web 59.4% (32 test bundles).
+
+Notebook runs top to bottom and reproduces the earlier results.
+
