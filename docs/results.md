@@ -216,3 +216,39 @@ Compare results using cross-dataset evaluation in Phase 4.
 
 The model is an initial baseline and has not yet been demonstrated to generalise to unseen network environments.
 
+
+
+\## 20-flow window model (rf\_window\_v1)
+
+CIC test (split by time within each source): false alarm rate 0.82%,
+
+attack detection 91.8%. Recall: portscan 98.8%, dos 90.1%,
+
+bruteforce 58.8%, web 59.4% (only 32 test windows).
+
+
+
+Lab captures (own Zeek data):
+
+| Capture | Flows | Bundles | Correct |
+
+|---|---|---|---|
+
+| benign\_02 + benign\_03 | 3,247 | 161 | 100% benign |
+
+| portscan\_01 | 65,554 | 3,277 | 99.8% |
+
+| dos\_01 | 1,000 | 50 | 100% |
+
+| bruteforce\_02 | 323 | 16 | 0% |
+
+| web\_01 | 90 | 4 | 0% (too small to judge) |
+
+
+
+Per-flow models failed on lab data; the window model fixed port scan and DoS.
+
+Known gaps: brute force and web attacks.
+
+
+
